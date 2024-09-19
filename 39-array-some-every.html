@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array some function</title>
+</head>
+<body>
+    <script>
+        var ages = [10,14,20,21,11,30,25];
+
+        document.write(ages + "<br>");
+        
+
+        // one value pass the text then run function
+        var b = ages.some(checkAdult);
+        document.write(b);
+        
+        function checkAdult(age){
+            return age >= 10;
+        }
+        document.write('<br> <br>');
+
+
+        var test = [23, 39,40,20,22,33,44];
+
+        // when all value check test then run function
+        var check = test.every(checkValue);
+        document.write(test + "<br>");
+        
+        document.write(check);
+        
+        function checkValue(value){
+            return value >= 20;
+        }
+        
+        
+    </script>
+</body>
+</html>

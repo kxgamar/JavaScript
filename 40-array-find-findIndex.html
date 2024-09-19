@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find & find index</title>
+</head>
+<body>
+    <script>
+        var ages = [10,13,11,30,20,50];
+        document.write(ages +"<br>");
+        
+
+        // var find = 20;
+        var check = ages.find(checkAdult);
+        document.write(check);
+        
+
+        function checkAdult(age){
+            return age >= 30;  // picup the first value upper of 30  : return actual value
+        }
+        document.write('<br><br>');
+        
+        // var find = 20;
+        var check = ages.findIndex(checkAdult);
+        document.write(check);
+        
+
+        function checkAdult(age){
+            return age >= 30;  // return the test index value
+        }
+
+    </script>
+</body>
+</html>

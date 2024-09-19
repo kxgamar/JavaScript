@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array slice splice</title>
+</head>
+<body>
+    <script>
+        var a = ["salman","sagor","sohan","anik","sakib"];
+
+        document.write(a);
+        document.write('<br>');
+        
+
+        // use slice() function for creat a new array 
+        var b = a.slice(1,4);  
+        document.write(b);
+        document.write('<br>');
+        
+        b = a.slice(3);
+        document.write(b);
+        document.write('<br><br>');
+        
+
+
+        // use splice() function for add array values & delete value
+
+        document.write(a + "<br>");
+        
+        // just add value no delete items
+         a.splice(2,0,"hello","welcome","everyone");
+        document.write(a);
+        document.write('<br>');
+        
+
+        // add value and delete items
+        a.splice(2,3,"add");
+        document.write(a);
+        
+        
+        
+        
+    </script>
+</body>
+</html>

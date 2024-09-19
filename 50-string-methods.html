@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+
+<body>
+    <script>
+        // use length 
+        var str = "use string properties";
+        var count = str.length;
+        document.write("length for string count : " + count);
+        document.write('<br> <br>');
+
+        // use toLowerCase
+        var lower = "toLowerCaseMethods";
+        var convart = lower.toLowerCase();
+        document.write("toLowerCase methods : - " + convart);
+        document.write('<br><br>');
+
+        // use toUpperCase 
+        var upper = "toUpperCase";
+        var convart = upper.toUpperCase();
+        document.write("toUpperCase methods : - " + convart);
+        document.write('<br> <br>');
+
+
+        // use includes  : its case sensetive
+        var include = "includes methods use for search any existing words";
+        var search = include.includes("for");
+        document.write("includes methods for search : - " + search);
+        document.write('<br> <br>');
+
+
+        // use startsWith for search first word
+        var startSearch = "starts with methods for search first word ";
+        var a = startSearch.startsWith("sta");
+        document.write("startsWith methods for search first word : - " + a);
+        document.write('<br> <br>');
+
+
+
+        // use endsWith for search last word
+        var endSeach = "ends with methods for search last word";
+        var a = endSeach.endsWith("rd");
+        document.write("startsWith methods for search first word : - " + a);
+        document.write('<br> <br>');
+
+
+        // use search methods for return index search 
+        var str = "java script is a very easy language";
+        var b = str.search("is");
+        document.write("search methods for search : -- " + b);
+        document.write('<br> <br>');
+
+
+        // use match methods for 
+        var match = "it is a very easy language because is very goods is this is";
+        var b = match.match(/is/g);
+        document.write("match methods for return a new array : " + b);
+        document.write('<br> <br>');
+
+
+        // use indexOf methods
+        var str = "java script is a very easy language it is a great programing";
+        var b = str.indexOf("is");
+        document.write("indexOf methods : -- " + b);
+        document.write('<br> <br>');
+
+
+
+        // use lastIndexOf methods 
+        var str = "javasecript is a great language because it is a very easyest language";
+        var b = str.lastIndexOf("is");
+        document.write("lastIndexOf mehtods : -- " + b);
+        document.write('<br> <br>');
+
+
+
+        // use replace methods
+        var str = "this a replace methods for replace words";
+        var b = str.replace(/for/g, "replace");
+        document.write(b);
+        document.write('<br> <br>');
+
+
+        // use trim methods
+        // var str = "    this is    trim methods     .";
+        // var b = str.trim();
+        // alert(b);
+        //  document.write('<br> <br>');
+
+
+
+        // charAt methods 
+        var str = "this is charAt methods ";
+        var b = str.charAt(3);
+        document.write("charAt methods for search char :  " + b);
+        document.write('<br> <br>');
+
+
+
+        // use charCodeAt return scay code
+        var str = "this is charCodeAt methods";
+        var b = str.charCodeAt(2);
+        document.write("charCodeAt mehtods return scay code : " + b);
+        document.write('<br> <br>');
+
+
+
+        // use formCharCode methods
+        var a = String.fromCharCode(97);  // use String. 
+        document.write("fromCharCode methods : " + a);
+        document.write('<br> <br>');
+
+
+        // use concat methods
+        var a = "khalilur ";
+        var b = " rahman ";
+        var con = a.concat(b);
+        document.write("concat methods : " + con);
+        document.write('<br> <br>');
+
+
+        // use split methods
+        var str = "java script is a easy language ";
+        var b = str.split(" ");
+        document.write("split from space creat a new array   - " + b);
+        document.write('<br> <br>');
+
+
+        // other way
+        var c = str.split("a");
+        document.write("split form a : " + c);
+        document.write('<br> <br>');
+
+
+
+        // use repeat 
+        var str = "use repeat methods <br>";
+        var b = str.repeat(3);
+        document.write(b);
+        document.write('<br> <br>');
+
+
+
+        // use slice methods 
+        var str = "use slice methods for creat a new string";
+        var b = str.slice(3);
+        document.write(b);
+        document.write('<br> <br>');
+
+        // use another way 
+        var b = str.slice(12);
+        document.write(b);
+        document.write('<br> <br>');
+
+
+        // use substr methods
+        var str = "use substr methods for creat a new string";
+        var b = str.substr(5);  // use starting index 
+        document.write(b + "<br>");
+
+        var b = str.substr(5, 20);  // use starting index & end index
+        document.write(b + "<br> <br>");
+
+
+
+        // use substring 
+        var str = "use substring methods for creat ...";
+        var b = str.substring(5, 9);
+        document.write(b);
+
+        // use anoter index value 
+        var b = str.substring(15, 35);
+        document.write(b);
+        document.write('<br> <br>');
+
+
+
+        // use toString methods
+        var number = 1866213860;
+        var convertString = number.toString();
+        document.write("convart number to string " + convertString);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

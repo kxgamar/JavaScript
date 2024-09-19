@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case </title>
+</head>
+<body>
+    <script>
+        var day = 5;
+        var age = 70;
+
+        switch(day){
+            case 0: document.write("friday");
+            break;
+
+            case 1: document.write("sataurday");
+            break;
+
+            case 2: document.write("sunday");
+            break;
+
+            case 3: document.write("monday");
+            break;
+
+            case 4: document.write("tuesday");
+            break;
+
+            case 5: document.write("wednesday");
+            break;
+
+            case 6: document.write("thusday");
+            break;
+
+            default: document.write("enter the valid day");
+
+        }
+
+        document.write("<br><br>");
+        switch(true){
+            case (age >=1 && age <18): 
+                document.write("you are teenager");
+                break;
+
+            case (age >= 18 && age < 40):
+                document.write("you are addult person");
+                break;
+            case (age >= 40 && age < 80):
+                document.write("you are old man");
+                break;
+            default: document.write("enter the valid age");
+
+
+        }
+    </script>
+</body>
+</html>

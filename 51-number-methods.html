@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number methods</title>
+</head>
+
+<body>
+    <script>
+        // use Number methods
+        var a = "99";
+        var b = Number(a);
+        document.write(b);
+        document.write('<br> <br>');
+        b = b + 30;
+        document.write(b);
+        document.write('<br> <br>');
+
+
+        // use parseInt methods
+        var a = "99.88"; // picup string to first integer value
+        var b = parseInt(a);
+        document.write(b);
+        document.write('<br> <br>');
+        b = b * 2;
+        document.write(b);
+        document.write('<br> <br>');
+
+
+        // use parseFloat methods
+        var a = "44.56 years";  // picup string to first float value
+        var b = parseFloat(a);
+        document.write(b);
+        document.write('<br> <br>');
+        b = b / 2;
+        document.write(b);
+        document.write('<br> <br>');
+
+
+
+        // use finite methods
+        var a = "44";
+        var b = Number.isFinite(a);
+        document.write(b);
+        document.write('<br> <br>');
+        var d = 33;
+        var c = Number.isFinite(d)
+        document.write(c);
+        document.write('<br> <br>');
+
+
+
+        // use isInteger
+        var a = 100;
+        var b = Number.isInteger(a);
+        document.write(b);
+        document.write('<br> <br>');
+        var a = 100.33;
+        var b = Number.isInteger(a);
+        document.write(b);
+        document.write('<br> <br>');
+
+
+
+        // use toFixed
+        var a = 43.24623;   // decimal ar pore koto digite nite chau ar jonne
+        var b = a.toFixed(2);
+        document.write(b);
+        document.write('<br> <br>');
+        b = a.toFixed(4);
+        document.write(b);
+        document.write('<br> <br>');
+
+
+
+        // use toPrecision for provide round of number
+        var a = 23.3224534;
+        var b = a.toPrecision(3);  // i need 3 digit number
+        document.write(b);
+        document.write('<br> <br>');
+
+
+    </script>
+</body>
+
+</html>

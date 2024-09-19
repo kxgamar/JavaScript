@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom get and set value</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit id
+        beatae ad saepe asperiores debitis assumenda sapiente impedit sint, iure
+        eius fugiat quibusdam, provident eaque, nulla non natus accusantium.
+      </p>
+      <p class="class">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        possimus veniam distinctio, ipsum voluptatem ullam omnis fugit optio
+        voluptates, assumenda aliquam voluptas reiciendis mollitia obcaecati
+        cumque consequuntur aut doloremque itaque.
+      </p>
+      <p id="id" class="classname" style="border: 1px solid transparent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint et sunt
+        totam eaque unde dolore, amet ullam ratione. Laboriosam magnam autem
+        omnis facilis aliquid maiores voluptates fuga neque voluptate earum!
+      </p>
+    </div>
+
+    <script>
+      var a = document.getElementById("id").innerHTML;
+      console.log(a);
+
+      /* get methods
+            innerText
+            innerHTML
+            getAttribute
+            getAttributeNode
+            Attributes */
+
+      // get inner text
+      var a = document.getElementsByTagName("p")[0].innerText;
+      console.log(a);
+
+      var b = document.getElementById("id");
+      b.innerHTML;
+      console.log(b);
+
+      var c = document.getElementsByClassName("class")[0];
+      c.innerText;
+      console.log(c);
+
+      var d = document.getElementById("id").getAttribute("id");
+      console.log(d);
+      var d = document.getElementById("id").getAttribute("class");
+      console.log(d);
+      var d = document.getElementById("id").getAttribute("style");
+      console.log(d);
+
+      var atr = document.getElementById("id").attributes;
+      console.log(atr);
+
+      var g = document.getElementById("id").attributes[2];
+      console.log(g);
+
+      // get attribute value
+      var v = document.getElementById("id").attributes[2].value;
+      console.log(v);
+
+      // get attribute name
+      var v = document.getElementById("id").attributes[1].name;
+      console.log(v);
+
+      /* set methods 
+            innerText
+            innerHTML
+            setAttribute
+            Attribute
+            removeAttribute  */
+
+      // change inner text
+
+      // var am =     document.getElementById('id').innerText = "inner";
+      //     document.write(am);
+
+      // var d = document.getElementById('id').innerHTML = "<h1>inner html </h1>";
+      // console.log(d);
+
+      // document.getElementById('id').setAttribute('style','color:green;');
+
+      // var da = document.getElementById('id').attributes;
+      // console.log(da);
+
+      // document.getElementById('id').removeAttribute('style');
+
+      document.getElementById("id").innerText = "this is changed text";
+      var a = document.getElementById("id").innerText;
+      console.log(a);
+
+      document.getElementsByClassName("class").innerText = "hello sir";
+
+      var cl = document.getElementsByClassName("class").innerText;
+      console.log(cl);
+
+      document.getElementsByClassName("class").innerHTML =
+        "<h1>hello sir </h1>";
+
+      var cl = document.getElementsByClassName("class").innerText;
+      console.log(cl);
+    </script>
+  </body>
+</html>

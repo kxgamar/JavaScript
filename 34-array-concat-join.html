@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ary concat and joinn</title>
+</head>
+
+<body>
+    <script>
+        var a = ["first", "second", "third"];
+
+        // use concat()
+        var add = a.concat("hello", "welcome");
+        document.write(add);
+        document.write('<br>');
+
+
+        // another way to concat
+        var b = ["forth", "fifth"];
+        var c = a.concat(b);
+        document.write(c);
+        document.write('<br>');
+
+
+        // multi array concat
+        var d = ["d array"];
+        var e = ["e array"];
+
+        var multiconcat = c.concat(d, e);
+        document.write(multiconcat);
+        document.write('<br>');
+        
+
+
+        // use join() function
+        var jonary = multiconcat.join(" - ");
+        document.write(jonary);
+        
+
+
+    </script>
+</body>
+
+</html>

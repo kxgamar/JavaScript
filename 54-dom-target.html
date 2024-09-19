@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom target</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="abc">h1 tages</h1>
+        <div id="content">
+            <p id="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque ipsa animi! Voluptate harum unde exercitationem eligendi corrupti aliquid quos.</p>
+
+         
+            <ul id="list">
+                <li class="list-item">list items 1</li>
+                <li class="list-item">list items 2</li>
+                <li class="list-item">list items 3</li>
+                <li class="list-item">list items 4</li>
+                <li class="list-item">list items 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var a ;
+        a = document;
+        console.log(a);
+        console.log(a.all);
+        console.log(a.all[4]);
+        console.log(a.head);
+        console.log(a.title);
+        console.log(a.body);
+        console.log(a.links);
+        console.log(a.links[0]);
+        console.log(a.forms);
+        console.log(a.doctype);
+        console.log(a.URL);
+        console.log(a.domain);
+        console.log(a.baseURI);
+
+        var b = document.getElementById('abc');
+        console.log(b);
+        
+        var clas = document.getElementsByClassName('list-item');
+        clas =document.getElementsByClassName('list-item')[1];
+        
+        console.log(clas);
+        
+        var id = document.getElementsByTagName('li');
+        console.log(id);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function total calculate</title>
+</head>
+<body>
+    <script>
+        
+        // total calculate function
+        function total(b,e,m){
+            var sum = b + e + m;
+            return sum;
+        }
+
+        function persentage(tt){
+            var vlu = (tt/300)*100;
+            document.write("persentage value is " + vlu);
+            
+        }
+
+        /*var a = total(39,20,50);
+        persentage(a);*/
+
+        persentage(total(39,20,50));
+        document.write('<br>');
+    </script>
+</body>
+</html>

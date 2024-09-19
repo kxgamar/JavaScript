@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date methods</title>
+</head>
+
+<body>
+    <script>
+        // date methods
+        var now = new Date();
+
+        document.write(now);
+        document.write('<br> <br>');
+
+
+        // toDateString
+        document.write(now.toDateString());
+        document.write('<br> <br>');
+
+        // getDate
+        document.write(now.getDate());
+        document.write('<br> <br>');
+
+
+        // getMonth
+        document.write(now.getMonth());
+        document.write('<br> <br>');
+
+
+        // getFullYear
+        document.write(now.getFullYear());
+        document.write('<br> <br>');
+
+
+        // getDay
+        document.write(now.getDay());
+        document.write('<br> <br>');
+
+
+        var preDate = new Date('january 22 2021');
+
+        document.write(preDate.toDateString());
+        document.write('<br> <br>');
+        document.write(preDate.getFullYear());
+        document.write("<br>" + preDate.getMonth());
+        document.write('<br> <br>');
+
+
+
+        // time methods 
+        document.write(now.getHours());
+        document.write('<br> <br>');
+
+        document.write(now.getMinutes());
+        document.write('<br> <br>');
+
+        document.write(now.getSeconds());
+        document.write('<br> <br>');
+
+        document.write(now.getMilliseconds());
+        document.write('<br> <br>');
+
+
+
+        // setDate
+        var setdate = new Date();
+        now.setDate(20);
+        document.write(now);
+        document.write('<br> <br>');
+
+        var setdate = new Date();
+        now.setSeconds(20);
+        document.write(now);
+        document.write('<br> <br>');
+
+        var setdate = new Date();
+        now.setFullYear(2030);
+        document.write(now);
+        document.write('<br> <br>');
+
+        var setdate = new Date();
+        now.setMonth(2);
+        document.write(now);
+        document.write('<br> <br>');
+
+        var setdate = new Date();
+        now.setHours(9);
+        document.write(now);
+        document.write('<br> <br>');
+
+        var setdate = new Date();
+        now.setMinutes(20);
+        document.write(now);
+        document.write('<br> <br>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array map methods</title>
+</head>
+
+<body>
+    <script>
+        var ary = [10, 22, 50, 51, 32, 22, 40,];
+
+        var newAry = ary.map(test);
+        document.write(newAry);
+
+        function test(x) {
+            return x * 10;
+        }
+        document.write('<br> <br>');
+        
+
+
+        // use to another way 
+        var array = [
+            {name : "khalilur", age : 22},
+            {name : "sagor", age : 22},
+            {name : "sakib", age : 22},
+            {name : "anik", age : 22},
+        ];
+
+        var b = array.map(func);
+
+        document.write(b);
+        
+        function func(x){
+            return x.name + " : " + x.age + "<br>";
+        }
+
+
+
+    </script>
+</body>
+
+</html>

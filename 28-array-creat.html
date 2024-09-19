@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat array</title>
+</head>
+
+<body>
+    <script>
+        // creat a new array
+
+        var ary = new Array("khalilur", 10, "ghatail", "tangail", "kaliagram", "true", "null");
+
+        document.write("<ul>");
+        for (var a = 0; a < ary.length; a++) {
+            document.write("<li>" + ary[a] + "</li>");
+
+        }
+        document.write("</ul>");
+
+
+        // creat a new array another way
+        var nuary = new Array();
+        nuary[0] = 10;
+        nuary[1] = "khalilur";
+        nuary[3] = "rahman";
+        nuary[7] = "true";
+
+
+        document.write("<ul>");
+        for (var a = 0; a < nuary.length; a++) {
+            document.write("<li>" + nuary[a] + "</li>");
+
+        }
+        document.write("</ul>");
+
+
+        // get value in user
+        var getary = new Array();
+
+        for (var g = 0; g < 5; g++) {
+            getary[g] = prompt("enter the value of array");
+        }
+
+
+        document.write("<ul>");
+        for (var a = 0; a < getary.length; a++) {
+            document.write("<li>" + getary[a] + "</li>");
+
+        }
+        document.write("</ul>");
+
+    </script>
+</body>
+
+</html>

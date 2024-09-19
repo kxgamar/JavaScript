@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function global & local value </title>
+</head>
+<body>
+    <script>
+        // global & local variable
+
+        var name = "khalilur rahman";
+
+        function fulnm(){
+            document.write(name);
+            var frientname = "sakib hasan";
+        }
+        fulnm();
+        document.write('<br>');
+        // document.write(name);
+
+        // this variable define under the function thets way it is not working --- see consol tab.
+        document.write(frientname);
+
+        
+    </script>
+</body>
+</html>

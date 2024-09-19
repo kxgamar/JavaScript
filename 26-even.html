@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even</title>
+    <style>
+        button{
+            padding: 10px 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="hello()">Click</button>
+    <button ondblclick="hello()">Double Click</button>
+    <button oncontextmenu="hello()">Right Click</button>
+    <button onmouseenter="hello()">Mouse enter</button>
+    <button onmouseout="hello()">Mouse out</button>
+
+    <!-- key press event input & body tag a use hoi -->
+    <button onkeypress="hello()">key press</button>
+    <button onkeyup="hello()">key up</button>
+    <button onload="hello()">load</button>
+    <button onunload="hello()">unload</button>
+    <button onresize="hello()">resize</button>
+    <button onscroll="hello()">scroll</button>
+
+    
+
+
+    <script>
+        function hello(){
+            // document.write("this is a click event called.");
+            alert("thanks for click");
+        }
+    </script>
+</body>
+</html>

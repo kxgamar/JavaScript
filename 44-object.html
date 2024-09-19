@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        // simple object
+        var a = {
+            fname: "khalilur",
+            lname: "rahmna",
+            age: 22,
+            email: "kxgamar5@gmail.com",
+            favmovie: ["kgf", "rrr", "misson", "iron man", "dff"],
+            salary: function () {
+                return 25000;
+            },
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            },
+            liveng: {
+                countyr: "bangladesh",
+                city: "dhaka",
+                jela: "tangail",
+                poslicsstation: "ghatail"
+            }
+
+        }
+
+
+
+        document.write(a.fullname() + "<br>");
+        document.write(a.liveng.countyr);
+
+ 
+
+        console.log(a);
+        console.log(a['fname']);
+        console.log(a.favmovie);
+        console.log(a.salary());
+
+
+
+
+
+    </script>
+</body>
+
+</html>

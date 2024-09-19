@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>query selector</title>
+  </head>
+  <body>
+    <h1 id="head" class="header">heading useing query selector</h1>
+
+    <li class="list">items list 1</li>
+    <li class="list">items list 2</li>
+    <li class="list">items list 3</li>
+    <li class="list">items list 4</li>
+    <li class="list">items list 5</li>
+
+    <script>
+      document.querySelector(".header").innerHTML = "<p>this is p tag ";
+      document.querySelectorAll(".list")[2].innerHTML = "i am a ";
+
+      var dam = document.querySelectorAll('.list')[4].innerHTML;
+      console.log(dam);
+
+      console.log(document.querySelectorAll('.list')[1].innerHTML);
+      
+      
+      
+    </script>
+  </body>
+</html>

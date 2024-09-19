@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom traversal methods</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .outer {
+        height: 200px;
+        padding: 5px;
+        background-color: wheat;
+        .inner {
+          background-color: pink;
+          height: 140px;
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          padding: 20px;
+          position: relative;
+          left: 50px;
+          top: 10px;
+          .box {
+            display: flex;
+          }
+
+          .item {
+            background-color: blueviolet;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <h2>outer</h2>
+      <div class="inner">
+        <h2>inner</h2>
+        <div class="box">
+          <div class="item">A</div>
+          <div class="item">B</div>
+          <div class="item c">C</div>
+          <div class="item">D</div>
+          <div class="item">E</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* traversal methods
+        1. parentNode
+        2. parentElement
+        3. children
+        4. childNodes
+        5. firstChild
+        6. firstElementChild
+        7. lastElement
+        8. lastChild
+        9. nextSibling
+        10. nextElementSibling
+        11. previousSibling
+        12. previousElementSibling */
+
+      // 1 parentElement
+      // var outerparent = document.querySelector('.outer').parentElement;
+      // console.log(outerparent);
+
+      //  var a = document.querySelector('.inner').parentElement;
+      // console.log(a);
+      // document.querySelector('.inner').parentElement.style.background = "red";
+      // document.querySelector('.c').parentElement.style.background = "orange";
+
+      // 2 parentNode
+      // var a = document.querySelector('html').parentNode;
+      // console.log(a);
+      // document.querySelector('.c').parentNode.style.background = "green";
+
+      // 3 children
+      // var a = document.querySelector('.outer').children;
+      // console.log(a);
+      // var a = document.querySelector('.outer').children[1].innerHTML;
+      // console.log(a);
+
+      // 4 childNode
+      // var a = document.querySelector('.inner').childNodes;
+      // console.log(a);
+      // var a = document.querySelector('.inner').childNodes[1].innerHTML;
+      // console.log(a);
+
+      // 5 firstChild
+      // var a = document.querySelector('.inner').firstChild;
+      // console.log(a);
+
+      // 6 lastChild
+      // var a = document.querySelector('.inner').lastChild;
+      // console.log(a);
+
+      // 7 firstElementChild
+      // var a = document.querySelector('.box').firstElementChild.style.color = "red";
+      // console.log(a);
+
+      // 8 lsatElementChild
+      // var a = document.querySelector('.box').lastElementChild;
+      // console.log(a);
+      // document.querySelector('.box').lastElementChild.style.background = "green";
+
+      // 9 nextElementSibling
+      // var a = document.querySelector('.c').nextElementSibling;
+      // console.log(a);
+      // a.style.color = "red";
+      // a.style.background = "aqua";
+      // a.innerHTML;
+
+      // 10 previousElementSibling
+      // var a = document.querySelector('.c ').previousElementSibling;
+      // console.log(a);
+      // a.style.background = "green";
+
+      // 11 previoussibling
+      // var a = document.querySelector('.c').previousSibling;
+      // console.log(a);
+
+      // 12 nextSibling - jodi html a tag a space thake tahole text node pabo r space na thakle tag/ element pabo
+
+      // var b = document.querySelector('.c ').nextSibling;
+      // console.log(b);
+
+      // other practies
+      // var b = document.querySelector('.box').firstElementChild;
+      // var d = b.previousElementSibling;
+      // console.log(d);
+    </script>
+  </body>
+</html>

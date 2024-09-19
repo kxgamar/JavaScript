@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom styling methods</title>
+    <style>
+      .heading {
+        border: 2px solid red;
+      }
+
+      .abc {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="head" class="heading abc def ghi" style="border: 1px solid green">
+      this is header tags
+    </header>
+
+    <script>
+      // style
+      // className
+      // listName
+      
+            
+      
+
+      var a = document.querySelector("#head").style.border;
+      console.log(a);
+      document.querySelector(".heading").style.backgroundColor = "red";
+      document.querySelector(".heading").style.padding = "20px";
+      document.getElementById("head").style.color = "white";
+
+      // use className
+    //   document.querySelector(".heading").className = "abc xyz";
+
+    //   var a = document.getElementById("head").className;
+
+    //   console.log(a);
+
+      // use classList add / remove 
+
+    //   document.querySelector(".heading").classList.add('amn', 'efg') ;
+    // document.getElementById('head').classList.remove('abc','ghi');
+    
+
+      var asa = document.getElementById("head").classList;
+
+      console.log(asa);
+    </script>
+  </body>
+</html>
+
+
+
